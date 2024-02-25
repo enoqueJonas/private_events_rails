@@ -1,0 +1,6 @@
+<ul>
+    <h2> <%= @par%> </h2>
+    <% @events.each do |event| %>
+        <li>Title: <%= event.title %> Location: <%= event.location %></li>
+    <% end %>
+</ul>
