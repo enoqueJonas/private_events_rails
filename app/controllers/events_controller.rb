@@ -9,7 +9,6 @@ class EventsController < ApplicationController
     @event_creation = EventCreation.new
     @event = @event_creation.build_created_event(events_params)
     @event_creation.event_creator = @user
-
     if @event.save
       @event_creation.save
       redirect_to user_events_path
