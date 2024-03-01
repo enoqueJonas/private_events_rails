@@ -1,6 +1,7 @@
 <h2> <%= @event.title %> </h2>
 <p>Location: <%= @event.location %> </p>
 <ul>
+    <li>Attendees</li>
     <% @attendees.each do |attendee| %>
         <li> ID: <%= attendee.id %>, Email: <%= attendee.email %> </li>
     <% end %>
