@@ -1,4 +1,10 @@
 class EventsController < ApplicationController
+
+  def index
+    @future_events = Event.future_events(Date.current)
+    @past_events = Event.past_events(Date.current)
+  end
+
   def new
     @user = User.find(params[:user_id])
     @event = Event.new

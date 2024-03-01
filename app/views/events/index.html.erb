@@ -1,0 +1,12 @@
+<ul>
+    <li>Future Events</li>
+    <% @future_events.each do |event|%>
+       <li> <%= event.title %> </li>
+    <% end %>
+</ul>
+<ul>
+    <li>Past Events</li>
+    <% @past_events.each do |event|%>
+        <li> <%= event.title %> </li>
+    <% end %>
+</ul>
